@@ -29,25 +29,41 @@ public class Main2 {
 		bookStore.setAddress("부산 남구");
 
 		// 추가하고자 하는 책을 생성
-		Book book = new Book(100, "java", "저자", 1230, 'B', new Date());
+		Book book = new Book(100, "java", "저자", 1000, 'B', new Date());
 
 		// 서점에 1권의 책 등록
 		bookStore.insertBook(book);
 		
 		
 		// 문제1 임의의 책을 2권 생성한후 서점에 등록하기
-		Book book1 = new Book(101, "Python", "가나", 10000, 'A', new Date());
-		Book book2 = new Book(150, "Spring", "다라", 12300, 'C', new Date());
+		Book book1 = new Book(101, "Python", "가나", 500, 'A', new Date());
+		Book book2 = new Book(150, "Spring", "다라", 15000, 'C', new Date());
 		
 		bookStore.insertBook(book1);
 		bookStore.insertBook(book2);
 		
 		
-		//책 삭제
+		//마지막에 등록된 책 삭제
 		bookStore.deleteBook();
-
+		
+		
+		//1000원 이상인 책 수량 반환하는 메소드
+		bookStore.priceQuery(1000);
+		
+		//할인
+		bookStore.discountPrice(0.8f);
+		
+		bookStore.selectBook();
+		
+		
+		
+		// 내가 찾고 싶은 책 코드로 찾기
+		bookStore.printCate('C');
+		
 		// 현재까지 등록된 책 조회
 		bookStore.selectBook();
+		
+		
 		
 		
 	}
