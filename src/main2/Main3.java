@@ -32,9 +32,12 @@ public class Main3 {
 		courseList.printCourse();
 		
 		
-		
 		// 5. 등록한 과목의 교수정보 조회
+		courseList.printProfessor();
 		
+		
+		// 6.교수명과 교수방을 출력
+		courseList.printProfessorNameAndRoom();
 		
 
 		

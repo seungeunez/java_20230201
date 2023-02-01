@@ -17,6 +17,8 @@ public class CourseList {
 	private Course[] courseArray = new Course[10];
 	private int idx = 0; // 배열 내부의 개수를 저장하는 변수
 
+	
+	
 	// 과목을 1개씩 등록할 수 있는 메소드 생성
 	public void insertCourse(Course course) {
 		
@@ -37,6 +39,24 @@ public class CourseList {
 		}
 	}
 
+	// 등록된 교과목의 교수정보를 출력
+	public void printProfessor() {
+		for(int i =0; i<idx; i++) {
+			Professor professor = this.courseArray[i].getProfessor();	//교수 가져오기
+			System.out.println(professor.toString());	// 교수정보 모두 출력 toString()
+		}
+	}
+	
+	// 등록된 교과목의 교수정보중에서 교수명과 교수방을 출력하는 메소드
+	public void printProfessorNameAndRoom() {
+		for(int i=0; i<idx; i++) {
+			Professor professor = this.courseArray[i].getProfessor();
+			System.out.println("교수명: " + professor.getName() + " " + "교수실: " + professor.getRoom());
+		}
+	}
+	
+	
+	
 //	// 마지막에 추가한 과목 삭제하는 메소드
 //	public void deleteCourse() {
 //		if (idx > 0) {
