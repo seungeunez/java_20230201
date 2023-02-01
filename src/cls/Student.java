@@ -14,7 +14,7 @@ public class Student {
 	private int no = 0; // 학번
 	private String name = null; // 이름
 	private int grade = 1; // 학년
-	private Date date = null; // 등록일자 <날짜는 항상 넣자 내가 언제 했는지 알기 위해서?>
+	private Date date = null; // 등록일자 !날짜는 항상 넣자 내가 언제 했는지 알기 위해서?
 
 	// 생성자
 	public Student() {
