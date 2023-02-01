@@ -34,12 +34,14 @@ public class Main2 {
 		// 서점에 1권의 책 등록
 		bookStore.insertBook(book);
 		
+		
 		// 문제1 임의의 책을 2권 생성한후 서점에 등록하기
 		Book book1 = new Book(101, "Python", "가나", 10000, 'A', new Date());
 		Book book2 = new Book(150, "Spring", "다라", 12300, 'C', new Date());
 		
 		bookStore.insertBook(book1);
 		bookStore.insertBook(book2);
+		
 		
 		//책 삭제
 		bookStore.deleteBook();

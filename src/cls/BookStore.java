@@ -31,7 +31,7 @@ public class BookStore {
 
 	// 책 등록하는 메소드(함수) 기능 필요
 	public void insertBook(Book book) {
-		if (idx >= 100) {
+		if (idx >= 100) {	//책을 100개 등록 초과하면 추가 불가라고 뜸
 			System.out.println("책 추가 불가");
 		} else {
 			this.books[idx] = book;
