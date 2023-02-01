@@ -34,8 +34,6 @@ public class Book {
 	//생성자 Constructor 함수명이 클래스명과 같아야함. 반환타입이 없음 -> (void 말하는거)
 	
 	
-	
-	
 	//우클릭 - Source - Generate Constructors Super Class.. 빈거
 	//얘는 꼭 만들어 주자 세팅할 때 얘 존재가 사라짐 세팅안해주면 다 안만들어도 되는데 만들면 사라짐  만들어주자
 	//안만들면 있는데 만들면 밑의 코드 존재가 사라지니깐 
@@ -46,6 +44,9 @@ public class Book {
 //		// TODO Auto-generated constructor stub
 //	}
 //	
+	
+	
+	
 //	// 미리 세팅해주는 것 
 //	// 인수있는 생성자의 생성 
 //	// 우클릭 - Source - Generate Constructor using Fields.. 넣을거 선택 가능
