@@ -23,7 +23,7 @@ public class CourseList {
 		//idx는 현재 추가된 개수 < 배열의 전체 개수(10)
 		if (this.idx < this.courseArray.length) {	
 			this.courseArray[idx] = course;
-			idx++;
+			this.idx++;
 		}else {
 			System.out.println("등록 불가");
 		}
@@ -37,14 +37,20 @@ public class CourseList {
 		}
 	}
 
-	// 마지막에 추가한 과목 삭제하는 메소드
-	public void deleteCourse() {
-		if (idx > 0) {
-			idx--;
-		}
-	}
+//	// 마지막에 추가한 과목 삭제하는 메소드
+//	public void deleteCourse() {
+//		if (idx > 0) {
+//			idx--;
+//		}
+//	}
 
 	// 과목중에서 전달받는 학점에 해당하는 과목 조회
+	
+//	public {
+//		for(int i=0; i<idx; i++) {
+//		//	int credit = 
+//		}
+//	}
 	
 	
 	// 3을 전달하면 3학점에 해당하는 과목 조회
