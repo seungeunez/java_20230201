@@ -36,7 +36,7 @@ public class Item {	//Item이라는 타입
 	public void checkQuantity(int num) {
 		if (this.quantity < num) {
 			//this.quantity = this.quantity + num;
-			this.quantity = 1000;
+			this.quantity = num;
 		}
 	}
 
