@@ -1,5 +1,7 @@
 package cls;
 
+//Main4와 연결
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -29,10 +31,11 @@ public class BookStore {
 
 	// 생성자는 최초 한 번만 사용 가능하다, 반환값(void)이 없다, 클래스명과 정확하게 일치해야 한다.
 	// 준비물이 없는 빈 생성자
-	public BookStore() {
+	//반환할게 없음 세팅하는 용도라서 
+	public BookStore() {		
 		// super(); //지워도되는거임
 
-		this.books = new Book[100]; // 100개까지 넣을 수 있다는 뜻, 값은 지정 안했음 내가 해야하는거
+		this.books = new Book[100]; // 100개까지 넣을 수 있다는 뜻(0~99), 값은 지정 안했음 내가 해야하는거
 									// this 붙이자 연습해
 	}
 
@@ -42,7 +45,7 @@ public class BookStore {
 			System.out.println("책 추가 불가");
 		} else {
 			this.books[idx] = book; // books[0]을 book에 집어 넣는 거임
-			idx++;
+			idx++;					// 100개 이하면 계속 +1 +1 해주는 거임
 		}
 	}
 
@@ -109,5 +112,7 @@ public class BookStore {
 
 		}
 	}
+	
+	//메소드는 많이 만들수록 좋다 외부에서 내가 쓰기 편하려면 많이 만들어 놓는게 좋다
 
 }

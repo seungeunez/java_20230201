@@ -11,6 +11,9 @@ public class Main4 {
 
 	public static void main(String[] args) {
 		
+		//Main은 기능을 테스트 하는 용도임
+		
+		
 		// 1. 학생 등록
 		Student student = new Student(10, "송주현", 4, new Date());
 		
