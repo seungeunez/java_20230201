@@ -15,6 +15,7 @@ public class JoinFrame extends JDialog {
 	private JTextField textField_3;
 	private JTextField textField_4;
 	public JoinFrame() {
+		setTitle("Sign up");
 		getContentPane().setLayout(null);
 		
 		JButton btnNewButton = new JButton("Next");
