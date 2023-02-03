@@ -5,6 +5,12 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JToolBar;
+import javax.swing.JInternalFrame;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 //1. extends JDialog 상속
@@ -18,8 +24,12 @@ public class JoinFrame extends JDialog {
 		setTitle("Sign up");
 		getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("Next");
-		btnNewButton.setBounds(95, 210, 97, 23);
+		JButton btnNewButton = new JButton("Complete");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(95, 196, 97, 23);
 		getContentPane().add(btnNewButton);
 		
 		textField = new JTextField();
@@ -70,7 +80,7 @@ public class JoinFrame extends JDialog {
 		
 		//3줄 추가
 		this.setModal(true);
-		this.setSize(224,282);
+		this.setSize(224,268);
 		this.setVisible(true);
 	}
 }
