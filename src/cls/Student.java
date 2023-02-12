@@ -2,6 +2,7 @@ package cls;
 
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,6 +10,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 
 public class Student {
 	private int no = 0; // 학번
@@ -21,14 +23,14 @@ public class Student {
 		super();
 	}
 
-	// 생성자
-	public Student(int no, String name, int grade, Date date) {
-		super();
-		this.no = no;
-		this.name = name;
-		this.grade = grade;
-		this.date = date;
-	}
+	// 생성자	== AllArgsConstructor
+//	public Student(int no, String name, int grade, Date date) {
+//		super();
+//		this.no = no;
+//		this.name = name;
+//		this.grade = grade;
+//		this.date = date;
+//	}
 
 	// 학년 1씩 증가 시키기 (4학년까지만)
 	public void plusGrade() {
