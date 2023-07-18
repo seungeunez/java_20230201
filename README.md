@@ -16,7 +16,7 @@
     - 날짜 타입 Date
 
   위에 없는 것들은 내가 직접 클래스를 만들어야 함
-  ex) Member, Board, Item
+  - ex) Member, Board, Item
 
   
 
