@@ -12,8 +12,8 @@
     - 문자 타입 Character
     - 실수 타입 Float, Double,
     - 논리 타입 Boolean
-    - 문자열 타입 : String
-    - 날짜 타입 : Date
+    - 문자열 타입 String
+    - 날짜 타입 Date
 
   위에 없는 것들은 내가 직접 클래스를 만들어야 함
   ex) Member, Board, Item
