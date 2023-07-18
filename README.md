@@ -21,4 +21,4 @@
   
 - Frame 사용
 
-<img src="https://github.com/seungeunez/java_20230201/blob/main/images/frame01.png" width=700 alt="프레임사용">
+<img src="https://github.com/seungeunez/java_20230201/blob/main/images/frame01.png" width=500 alt="프레임사용">
